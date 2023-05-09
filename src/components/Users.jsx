@@ -23,7 +23,7 @@ const Users = () => {
       <div className="error">
         {error.message}
       </div>
-    );
+    );  
   }
 
   return (
