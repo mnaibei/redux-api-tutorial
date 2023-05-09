@@ -6,6 +6,7 @@ const initialState = {
   users: [],
   isLoading: true,
   error: undefined,
+  
 };
 
 export const getUsers = createAsyncThunk('users/getUsers', async () => {
@@ -16,7 +17,7 @@ export const getUsers = createAsyncThunk('users/getUsers', async () => {
   } catch (error) {
     return isRejectedWithValue(error.message);
   }
-}); 
+});
 
 const userSlice = createSlice({
   name: 'users',
